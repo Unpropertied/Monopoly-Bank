@@ -16,7 +16,7 @@ Auf dem Server:
 
 
 Nice to have:
-- Soundeffekte (?)
+- Soundeffekte
 - grafische Umsetzung der Kontenstände
 - Besitzanzeige 
 - Mehrfachbuchungen
@@ -28,6 +28,7 @@ Nice to have:
 
 Mit IK 
 - Hauptseite
+    - Spiel beitreten
     - Einstellungen
     - Statistiken
 
@@ -43,4 +44,27 @@ Passive Rolle ohne eigene Postition im Spiel
 - eigener Spielstand
 - Buchungen vom eigenen Spielstand (Buchung zu eigenem Nachteil) 
  - eigene Käufe
- 
+
+### Master/Spielleiter
+- Erstellen von Spielen
+- Korrekturbuchungen
+- zuweisen von Straßen/Häusern
+- Mehrfachbuchungen
+
+## Funktionalität
+- Startseite:
+    - Spiel starten (-> Spieler hinzufügen über IKs, Name eingeben, Farbe auswählen, Spiel starten)
+    - Invitation Key eingeben (->Hauptseite)
+    - Einstellungen
+- Hauptseite:
+    - Name eingeben
+    - Farbe auswählen
+    - Spiel beitreten
+    - Statistiken
+    - Einstellungen
+
+WIE?
+
+    submit Button(s) -> Weiterleitung?
+    Eingabe über Android Keyboard
+    Rechner nicht über eval

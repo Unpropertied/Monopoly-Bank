@@ -63,8 +63,41 @@ Passive Rolle ohne eigene Postition im Spiel
     - Statistiken
     - Einstellungen
 
-WIE?
+# WIE?
 
-    submit Button(s) -> Weiterleitung?
-    Eingabe über Android Keyboard
-    Rechner nicht über eval
+## submit Button(s) -> Weiterleitung?
+
+```html
+<form action="" method="post">
+    <!-- Mehrere Inputs -->
+    <input type="submit" value="senden" />
+</form>
+```
+
+Dies sorgt dafür, dass die Seite neu geladen wird und die Seite in "action" aufgerufen wird. Da wir eine Single Page Application bauen wollen wir dies nicht.
+
+Wir könnten nun einfach den input type auf "button" ändern und einen onclick Händler hinzufügen, aber dann kann der Nutzer nicht mehr via z.B. Eingabetaste das Formular abschicken.
+
+Schöner ist es folgendes zu machen:
+```html
+<script>
+    function handler(){
+        alert("hi");
+    }
+</script>
+<form action="" method="POST" onsubmit="handler(); return false;">
+    <input type="submit"/>
+</form>
+```
+
+Wir haben unserem Form Element gesagt, es solle vor dem Abschicken immer den handler() aufrufen und via return false sagen wir, dass die Standardaktion (abschicken) nicht gemacht werden soll.
+
+## Eingabe über Android Keyboard
+
+Entweder muss man tatsächlich eine eigene Tastatur machen, oder nur ein paar Tasten für +/-/*//, da man mit folgendem Input Typ einen Nummernblog als Tastatur erzwingt:
+```html
+<input type="number"/>
+```
+
+## Rechner nicht über eval
+jaja, da reden wir noch drüber :*

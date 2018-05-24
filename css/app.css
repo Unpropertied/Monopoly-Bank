@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+
+  
+  --player-color: #080;
+}
+
+header {
+  background-color: var(--player-color);
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+header h1 {
+  font-weight: 300;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background-color: #333;
+  height: 5rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+}

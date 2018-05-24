@@ -1,0 +1,50 @@
+.startpage-main{
+  display: grid;
+
+  grid-template-columns: minmax(max-content, 10rem) minmax(max-content, 10rem);
+  grid-auto-rows: 3rem;
+  grid-gap: 2rem;
+  justify-content: center;
+
+  padding: 3rem;
+
+  background: var(--main-background);
+
+}
+
+.startpage-main input {
+  background: none;
+  border-radius: var(--border-radius);
+  border-width: var(--border-width);
+  border-style: solid;
+  border-color: var(--color);
+  color:  var(--color);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: .5rem;
+}
+
+.startpage-main input[type="text"]{
+  padding: 0 .5rem 0 .5rem;
+  --color: #888;
+}
+
+.startpage-main .span-h-2{
+  grid-column-end: span 2;
+}
+
+.startpage-main .span-v-2{
+  grid-row-end: span 2;
+}
+
+.startpage-main .startGame {
+  --color: #e88;
+}
+
+.startpage-main .viewGame {
+  --color: #88c;
+}
+
+.startpage-main .joinGame {
+  --color: #484;
+}

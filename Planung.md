@@ -2,7 +2,7 @@
 Eine mobile Variante der Monopoly Bank. 
 Erst rein lokal, später frei zugänglich auf einem Server liegend. 
 
-## Features:
+## Features: 
 Must haves:
 - Erstellen von Spielerprofilen
 - Verschieben von Geldbeträgen unter den Spielern
